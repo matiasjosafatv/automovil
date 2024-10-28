@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+atomovil_base_user,atomovil_base_user,model_automovil,base.group_user,1,1,1,1
+atomovil_color_base_user,atomovil_color_base_user,model_automovil_color,base.group_user,1,1,1,1
+automovil_modelo_base_user,automovil_modelo_base_user,model_automovil_modelo,base.group_user,1,1,1,1
+autmovil_brand_base_user,automovil_brand_base_user,model_automovil_brand,base.group_user,1,1,1,1

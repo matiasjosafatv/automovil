@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+
+
+
+        <!-- model.name tree view -->
+        <record id="automovil_view_list" model="ir.ui.view">
+            <field name="name">automovil.view.list</field>
+            <field name="model">automovil</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="tires" widget="percentage" />
+                    <field name="color" widget="badge" />
+                    <field name="air" widget="boolean_button"/>
+                    <field name="year"/>
+                    <field name="engine_number" widget = "char"/>
+                    <field name="automovil_color_id" />
+                    <field name="automovil_modelo_id" />
+                    <field name="automovil_brand_id" />
+
+                </list>
+            </field>
+        </record>
+
+
+        <!-- model.name form view -->
+        <record id="automovil_view_form" model="ir.ui.view">
+            <field name="name">automovil.view.form</field>
+            <field name="model">automovil</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <group>
+                            <field name="name"/>
+                            <field name="foto" widget="image"/>
+                            <field name="signature" widget="signature"/>
+                            <field name="contract" />
+                            <field name="tires" widget="percentage" />
+                            <field name="color" />
+                            <field name="automovil_color_id" />
+                            <field name="air" widget="boolean_toggle"/>
+                            <field name="year"/>
+                            <field name="automovil_modelo_id" />
+                            <field name="automovil_brand_id" />
+                            <field name="email"/>
+
+
+                            </group>
+                            <group>
+                            <field name="tank_combustible"
+                            widget="percentpie"/>
+                            <field name="purchase_date" />
+                            <field name="engine_number"/>
+
+                            </group>
+                        </group>
+
+                        <notebook>
+
+                            <page string="Description" >
+                                <field name="description" />
+                            </page>
+
+                            <page string="Driver" >
+                                <group>
+                                <field name="change_driver_date" />
+                                <field name="driver" />
+                                </group>
+                            </page>
+
+
+                        </notebook>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- model.name action window -->
+        <record id="automovil_action" model="ir.actions.act_window">
+            <field name="name">Automoviles</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">automovil</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Esta es la lista de automoviles
+                </p><p>
+                    Cree un nuevo automovil para ver registros.
+                </p>
+            </field>
+        </record>
+
+
+
+    </data>
+</odoo>

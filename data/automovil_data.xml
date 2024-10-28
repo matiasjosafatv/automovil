@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data noupdate="0">
+        <record id="automovil_camaro" model="automovil">
+            <field name="name">Camaro</field>
+            <field name="color">red</field>
+
+        </record>
+
+        <record id="automovil_vw_caribe" model="automovil">
+            <field name="name">Caribe</field>
+            <field name="color">white</field>
+
+        </record>
+    </data>
+
+    <data noupdate="1">
+        <record id="automovil_lambo" model="automovil">
+            <field name="name">LAmborginni</field>
+            <field name="color">blue</field>
+
+        </record>
+
+        <record id="automovil_hoda_civic" model="automovil">
+            <field name="name">Honda Civic</field>
+            <field name="color">orange</field>
+
+        </record>
+    </data>
+</odoo>
